@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+  height: 80vh;
+  grid-template-rows: 300px 1fr 1fr;
+  margin-inline: 30vw;
+  margin-block: auto;
+  place-items: center;
+  padding-block: 1rem;
+}
+
+.color-box {
+  width: 300px;
+  height: 300px;
+  border-radius: 0.75rem;
+}
+
+.options {
+  margin-block: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.options>button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  min-width: 5rem;
+  background-color: azure;
+}
+
+.output-dialouge {
+  font-size: 1.2rem;
+  margin-inline-end: 1rem;
+}
+
+.failure {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.result {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.play-again {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  min-width: 5rem;
+  color: white;
+  align-self: flex-end;
+  background-color: green;
+}
+
+.play-again:hover {
+  opacity: 0.8;
+}
+
+.no-result {
+  justify-content: flex-end;
+}

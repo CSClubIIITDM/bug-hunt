@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="initial.js" defer></script>
+    <style>
+      input {
+        border: none;
+        border-bottom: 2px solid #777777;
+        font-size: inherit;
+      }
+      input:focus {
+        border-bottom: 2px solid #222222;
+        outline: none;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 21%, #80d0c7 100%);
+      }
+      #form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding-inline: 3rem;
+        padding-block: 2.75rem;
+        font-size: 2rem;
+        background-color: #ffffff;
+        border-radius: 1.25rem;
+      }
+      #form > div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        color: #222222;
+      }
+      #form > div:has(input) {
+        font-size: 1.5rem;
+      }
+      #form label {
+        font-weight: 500;
+      }
+      #signin-button {
+        flex: 1;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background-color: #0093e9;
+        border: none;
+        color: white;
+        padding-block: 0.5rem;
+        border-radius: 0.25rem;
+      }
+      #signin-button:hover {
+        background-color: #0094e9cb;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <div>Welcome back!!</div>
+      <div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="johndoe@gmail.com"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="********"
+          required
+        />
+      </div>
+      <button type="submit" id="signin-button">Sign In</button>
+    </form>
+  </body>
+</html>

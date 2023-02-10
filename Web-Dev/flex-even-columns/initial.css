@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #0f0e17;
+    color: #a7a9be;
+}
+
+main {
+    padding-inline: 2rem;
+    min-height: 200vh;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-block: 2rem;
+    color: #fffffe;
+    font-weight: 600;
+}
+
+section>p {
+    margin-block-end: 1.5rem;
+}
+
+.flex-even-columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.flex-even-columns>* {
+    flex-basis: 25%;
+}
+
+.card {
+    width: 20rem;
+    background-color: hsl(0, 0%, 50%);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: grid;
+    padding-block-end: 1.5rem;
+}
+
+.card>img {
+    width: 30rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.card>p {
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    color: #fffffe;
+}
+
+.card>button {
+    display: block;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    margin-inline: 1.5rem;
+    color: #fffffe;
+    font-weight: 600;
+    background-color: #ff8906;
+    cursor: pointer;
+}
+
+.card>button:hover,
+.card>button:focus {
+    background-color: #ff8b06bf;
+}
