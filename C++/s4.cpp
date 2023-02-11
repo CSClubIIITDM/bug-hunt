@@ -4,9 +4,9 @@
 #include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
-#define Random(n)  random()%n
+#define Random(n) random()%n;
 
-int random(){
+long int random(){
     srand(time(0));
     return rand();
 }

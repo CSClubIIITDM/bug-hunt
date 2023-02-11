@@ -1,3 +1,5 @@
+//No Bug
+
 #include<iostream>
 using namespace std;
 
