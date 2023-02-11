@@ -4,7 +4,7 @@
 #include<string>
 
 int main(){
-    std :: string s = "Hello World";
+    std :: string s = NULL;
 
     for(int i=0;i < s.length(); i++){
         s[i] = toupper(s[i]);

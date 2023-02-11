@@ -15,7 +15,7 @@ public:
         vector<vector<int>> output;
         for (int i = 0; i < nums.size(); i++){
             int j = i + 1;
-            int k = i+j;
+            int k = nums.size()-1;
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
                 if (sum == target) {
@@ -28,8 +28,15 @@ public:
                 }
             }
         }
-        for(auto triplets : s)
-            output.push_back(triplets);
-        return output;
+        for(auto triplets : s){
+            cout<<triplets[0]<<triplets[1]<<triplets[2];
+            output.push_back(triplets);}
+        
     }
 };
+
+int main(){
+    vector<int>nums={1,2,-3,1,-2,1};
+    Solution s;
+    s.threeSum(nums);
+}

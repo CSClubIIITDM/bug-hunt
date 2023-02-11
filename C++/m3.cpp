@@ -6,7 +6,8 @@ using namespace std;
 char *initialize() {
   char string[80];
 //   string = "hello"
-  char* ptr = string;
+  char* ptr ;
+  ptr = string;
   return ptr;
 }
 
@@ -16,8 +17,10 @@ void do_something_with(char* myval){
 
 main() {
 	cout << "enter value for myval" << endl;
-  char *myval = initialize();
+  char *myval ;
+  myval = initialize();
   cin >> *myval;
+  cout<<*myval;
   cout << "Variable intialized" << endl;
   do_something_with(myval);
 }
