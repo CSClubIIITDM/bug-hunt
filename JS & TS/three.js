@@ -20,7 +20,7 @@ const team = [
   },
 ];
 const hasFriends = (person) => {
-  return !(person.friends === false);
+  return (person.friends === true);
 };
 
 const jamesHolden = team[3];

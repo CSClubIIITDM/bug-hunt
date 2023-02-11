@@ -29,11 +29,13 @@ section>p {
 }
 
 .flex-even-columns {
+    
     display: flex;
     gap: 2rem;
 }
 
 .flex-even-columns>* {
+    display: flex;
     flex-basis: 25%;
 }
 
