@@ -1,13 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-
-int main(void){
+int main(void)
+{
     string string1 = "Hello";
     string string2 = "Horld";
 
     if (string1 == string2)
-    cout << "Equal";
+        cout << "Equal";
     else
-    cout << "Not Equal";
+        cout << "Not Equal";
 }
