@@ -21,7 +21,7 @@ let team = [
   },
 ];
 const filterBySalary = (peopleArray, threshold = 300) => {
-  return peopleArray.find((person) => person.salary > threshold);
+  return peopleArray.filter(person => person.salary > threshold);
 };
 const filteredTeam = filterBySalary(team, 300);
 console.log(team, filteredTeam);

@@ -24,10 +24,9 @@ const noOfPeopleEarning = (employees) => {
   let total = 0;
   for (const employee of employees) {
     const earns = employee.earns;
-    if (earns === false) {
-      continue;
+    if (earns === true) {
+      total++;
     }
-    total++;
   }
   return total;
 };
