@@ -6,7 +6,7 @@ document.getElementById("form").addEventListener("submit", function () {
 // Event listener for sign-in button
 document
   .getElementById("signin-button")
-  .addEventListener("click", function (event) {
+  .addEventListener("onClick", function (event) {
     event.preventDefault();
     console.log(userName, password);
   });

@@ -18,16 +18,16 @@ int count(int coins[], int n, int sum)
 	for (i = 1; i < sum + 1; i++) {
 		for (j = 0; j < n; j++) {
 
-			x = (i - coins[j] >= 0) ? table[j][i - coins[j]] : 1;
+			x = (i - coins[j] >= 0) ? table[j][i - coins[j]] : 0;
 
 
-			y = (j > 1) ? table[j - 1][i] : 1;
+			y = (j > 1) ? table[j - 1][i] : 0;
 
 
 			table[i][j] = x + y;
 		}
 	}	
-	return table[sum-1][n - 1];							
+	return table[sum][n - 1];							
 }
 
 // Driver Code
