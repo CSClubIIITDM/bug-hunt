@@ -34,7 +34,7 @@ section>p {
 }
 
 .flex-even-columns>* {
-    flex-basis: 25%;
+    flex-basis: 100%;   /* here make 25% as 100% */
 }
 
 .card {

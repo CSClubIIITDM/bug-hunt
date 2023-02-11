@@ -17,10 +17,11 @@ const team = [
   {
     name: "james",
     place: "earth",
+    friends: ["amos", "naomi"],
   },
 ];
 const hasFriends = (person) => {
-  return !(person.friends === false);
+  return !(person.friends === false);  // Here ! operator infront of returning value should be removed
 };
 
 const jamesHolden = team[3];

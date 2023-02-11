@@ -7,8 +7,8 @@ body {
 
 .container {
     background: white;
-    width: 120px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content; /* Change width and height to fit-content */
     padding-inline: 0.3rem;
     font-size: 3rem;
     border-radius: 0.3rem;
