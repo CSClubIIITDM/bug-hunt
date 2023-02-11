@@ -12,7 +12,12 @@ int main(){
     for(int i=0; i < myVec.size(); i++){
         std :: cout << myVec[i] << std :: endl;
     }
-    std :: cout << "Element at index 3: "<< myVec.at(3) << std::endl;
+    
+    // index out of bound error 
+    if(myVec.size() > 3)
+    	std :: cout << "Element at index 3: "<< myVec.at(3) << std::endl;
+    else
+    	std::cout << "index out of bound error\n";
     
     return 0;
 }

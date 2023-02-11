@@ -4,9 +4,9 @@
 #include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
-#define Random(n)  random()%n
+#define Random(n)  sdfdjandom()%n
 
-int random(){
+int sdfdjandom(){
     srand(time(0));
     return rand();
 }
