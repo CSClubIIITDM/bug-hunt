@@ -7,7 +7,7 @@ body {
 
 .container {
     background: white;
-    width: 120px;
+    width: fit-content;
     height: 200px;
     padding-inline: 0.3rem;
     font-size: 3rem;
