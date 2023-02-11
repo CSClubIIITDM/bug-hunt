@@ -21,6 +21,8 @@ public:
     string longestPalindrome(string s)
     {
         int n = s.size();
+        int in  = -1;
+	    int maxl = 0;
         if (n == 0)
             return "";
 
@@ -28,12 +30,14 @@ public:
             return s;
 
         string result = "";
-        for (int i = 0; i < n - 1; i++)
+        for (int i = 0; i < n ; i++)
         {
-            for (int j = 1; j <= n - i; j++)
+            for (int j = i; j <= n; j++)
             {
-                if (isPalindrome(s.substr(i, j)))
+                if (isPalindrome(s.substr(i, j)) && j-i-1>maxl)
                 {
+                    maxl=j-i+1;
+
                     if (result.size() < j)
                         result = s.substr(i, j + 1);
                 }
@@ -42,3 +46,10 @@ public:
         return result;
     }
 };
+
+int main(){
+    Solution ob;
+	string word = "findnitianhere";
+	cout << ob.longestPalindrome(word) << endl;
+	return 0;
+}

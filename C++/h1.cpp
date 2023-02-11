@@ -4,6 +4,7 @@
 // which should be the return value for the function longest pallindrome(char* s).
 
 #include<iostream>
+#include<cstring>
 using namespace std;
 
 void printSubStr(
