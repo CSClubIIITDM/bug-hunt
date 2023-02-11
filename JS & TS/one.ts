@@ -1,6 +1,7 @@
 type User = {
   name: string;
   email: string;
+  password: string;
 };
 
 const getUser = (): User => {
@@ -13,3 +14,5 @@ const getUser = (): User => {
 };
 
 const user1 = getUser();
+// Print the user1 object
+console.log(user1);

@@ -1,13 +1,15 @@
 // Event listener for form submit
 document.getElementById("form").addEventListener("submit", function () {
+  // Prevent the default action of the event which is to submit the form
+  event.preventDefault(); // Prevents the default action of the event which is to submit the form
   signInWithUserNameAndPassword();
 });
 
 // Event listener for sign-in button
 document
   .getElementById("signin-button")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
+  .addEventListener("onClick", function (event) {
+    event.preventDefault(); // Prevents the default action of the event which is to submit the form
     console.log(userName, password);
   });
 
