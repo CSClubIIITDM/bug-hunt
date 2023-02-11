@@ -17,8 +17,8 @@ void ineedj(void) {
   cout << "j is " << j << "\n";
 }
 
-main() {
-  int j;
+int main() {
+  // int j;
   j = foo(i);
   ineedj();
 }

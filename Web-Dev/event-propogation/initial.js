@@ -4,6 +4,7 @@ document.getElementById("form").addEventListener("submit", function () {
 });
 
 // Event listener for sign-in button
+function signInWithUserNameAndPassword() {
 document
   .getElementById("signin-button")
   .addEventListener("click", function (event) {
@@ -21,6 +22,6 @@ userNameNode.addEventListener("change", (e) => {
 passwordNode.addEventListener("change", (e) => {
   password = e.target.value;
 });
-function signInWithUserNameAndPassword() {
+
   console.log(`user with  username :${userName} sucessfully logged in`);
 }
