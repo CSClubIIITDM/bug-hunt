@@ -4,7 +4,7 @@ using namespace std;
 
 int main(void){
     string string1 = "Hello";
-    string string2 = "Horld";
+    string string2 = "HellO";
 
     if (string1 == string2)
     cout << "Equal";
