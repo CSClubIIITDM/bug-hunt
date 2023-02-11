@@ -17,6 +17,8 @@ const team = [
   {
     name: "james",
     place: "earth",
+    // james' earns value is not defined
+    earns: false,
   },
 ];
 
