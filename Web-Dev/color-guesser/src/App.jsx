@@ -28,7 +28,7 @@ const generateColor = () => {
 
 export default function App() {
   const [options, setOptions] = useState(["#0000FF", "#FF0000", "#00FF00"]);
-  const [answer, setAnswer] = useState("#FF0000");
+  const [answer, setAnswer] = useState("#0000FF");
   const [result, setResult] = useState();
   useEffect(() => {
     startGame();
