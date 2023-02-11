@@ -8,7 +8,7 @@ class Solution
 public:
     bool isPalindrome(string s)
     {
-        int i = 0, j = s.size();
+        int i = 0, j = s.size()-1;
 
         while (i < j)
         {
@@ -28,14 +28,13 @@ public:
             return s;
 
         string result = "";
-        for (int i = 0; i < n - 1; i++)
+        for (int i = 0; i < n; i++)
         {
-            for (int j = 1; j <= n - i; j++)
+            for (int j = i + result.size(); j <= n; j++)
             {
                 if (isPalindrome(s.substr(i, j)))
                 {
-                    if (result.size() < j)
-                        result = s.substr(i, j + 1);
+                    result = s.substr(i, j);
                 }
             }
         }
