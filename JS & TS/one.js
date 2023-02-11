@@ -1,5 +1,11 @@
-const printNames = (names) => {
-  return `We are ${names.toLowerCase()}`;
+var getUser = function () {
+    var user = {
+        name: "user",
+        email: "user@gmail.com",
+        password: "snvpoj9f"
+    };
+    return user;
 };
-const intro = printNames("krish" + +"bob");
-console.log(intro);
+var user1 = getUser();
+// Print the user1 object
+console.log(user1);

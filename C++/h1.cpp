@@ -4,6 +4,7 @@
 // which should be the return value for the function longest pallindrome(char* s).
 
 #include<iostream>
+#include<cstring>
 using namespace std;
 
 void printSubStr(
@@ -36,10 +37,10 @@ int longestPalSubstr(string str)
 	}
 
 	for (int k = 3; k <= n; ++k) {
-		for (int i = 0; i < n - k; ++i) {
+		for (int i = 0; i < n - k+1; ++i) {
 			int j = i + k - 1;
 
-			if (table[i + 1][j] && str[i] == str[j]) {
+			if (table[i + 1][j-1] && str[i] == str[j]) {
 				table[i][j] = true;
 
 				if (k > maxLength) {

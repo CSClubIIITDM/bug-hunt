@@ -12,7 +12,7 @@ int main(){
     for(int i=0; i < myVec.size(); i++){
         std :: cout << myVec[i] << std :: endl;
     }
-    std :: cout << "Element at index 3: "<< myVec.at(3) << std::endl;
-    
+    std :: cout << "Element at index 3: "<< myVec[3] << std :: endl;
+	
     return 0;
 }

@@ -24,6 +24,11 @@ const noOfPeopleEarning = (employees) => {
   let total = 0;
   for (const employee of employees) {
     const earns = employee.earns;
+    // If earns is undefined, it will be false
+    if (earns === undefined) {
+      console.log("undefined");
+      continue;
+    }
     if (earns === false) {
       continue;
     }
