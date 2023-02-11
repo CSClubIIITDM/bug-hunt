@@ -4,13 +4,14 @@
 #include<string>
 
 int main(){
-    std :: string s = "Hello World";
-
+    std :: string s = "\xb8";
+    //"\xb8" is a hex value for 184 
     for(int i=0;i < s.length(); i++){
         s[i] = toupper(s[i]);
+        
     }
 
     std::cout << s << std::endl;
 
-    return 1;
+    return 0;
 }

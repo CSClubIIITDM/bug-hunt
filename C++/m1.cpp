@@ -42,3 +42,11 @@ public:
         return result;
     }
 };
+
+int main()
+{
+    Solution S;
+    string str = "babad";
+    cout << S.longestPalindrome(str) << endl;
+    return 0;
+}

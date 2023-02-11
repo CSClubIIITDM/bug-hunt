@@ -1,0 +1,10 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/vcpkg/docs/examples/vcpkg_android_example_cmake",
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "valarray": "cpp",
+        "ostream": "cpp"
+    }
+    
+}

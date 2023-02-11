@@ -2,19 +2,20 @@
 // Random returns a random integer in the range 0 to n-1.
 
 #include<iostream>
-#include <bits/stdc++.h>
+#include<time.h>
+#include<math.h>
 using namespace std;
-#define Random(n)  random()%n
+#define Random() rand()
 
-int random(){
-    srand(time(0));
+int random()
+{
+    srand(time(NULL));
     return rand();
 }
 
-
 int main(void){
     int i=6, j=7;
-    int val = Random(j-i+1);
+    int val = Random()%2;
 
     cout << val << endl;
 }
