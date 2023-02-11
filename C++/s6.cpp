@@ -1,10 +1,11 @@
 // to find the largest sum of subarray
 #include<iostream>
+#include<climits>
 using namespace std;
 
 int maxSubArraySum(int a[], int size)
 {
-    int max_so_far = INT_MIN, max_ending_here;
+    int max_so_far = 0, max_ending_here=0;
  
     for (int i = 0; i < size; i++) {
         max_ending_here = max_ending_here + a[i];
@@ -15,4 +16,9 @@ int maxSubArraySum(int a[], int size)
             max_ending_here = max_so_far;
     }
     return max_so_far;
+}
+int main(){
+    int arr[]={-5,4,3,-2,1};
+    cout<<maxSubArraySum(arr,5);
+    return 0;
 }

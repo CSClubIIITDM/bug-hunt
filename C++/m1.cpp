@@ -8,7 +8,7 @@ class Solution
 public:
     bool isPalindrome(string s)
     {
-        int i = 0, j = s.size();
+        int i = 0, j = s.size()-1;
 
         while (i < j)
         {
@@ -34,7 +34,7 @@ public:
             {
                 if (isPalindrome(s.substr(i, j)))
                 {
-                    if (result.size() < j)
+                    if (result.size() < s.substr(i,j).size())
                         result = s.substr(i, j + 1);
                 }
             }

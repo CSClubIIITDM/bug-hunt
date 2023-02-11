@@ -3,7 +3,7 @@
 // ie. if the string given is 'djhfacdadcaop' the longest palindrom is 'acdadca' 
 // which should be the return value for the function longest pallindrome(char* s).
 
-#include<iostream>
+#include<bits/stdc++.h>//librar
 using namespace std;
 
 void printSubStr(
@@ -31,15 +31,15 @@ int longestPalSubstr(string str)
 		if (str[i] == str[i + 1]) {
 			table[i][i + 1] = true;
 			start = i;
-			maxLength = 2;
+			maxLength =2;
 		}
 	}
 
 	for (int k = 3; k <= n; ++k) {
-		for (int i = 0; i < n - k; ++i) {
+		for (int i = 0; i < n - k+1; ++i) {// n-k to n-k+1
 			int j = i + k - 1;
 
-			if (table[i + 1][j] && str[i] == str[j]) {
+			if (table[i + 1][j-1] && str[i] == str[j]) {//j-1
 				table[i][j] = true;
 
 				if (k > maxLength) {
@@ -61,7 +61,7 @@ int longestPalSubstr(string str)
 // Driver Code
 int main()
 {
-	string str = "forgeeksskeegfor";
+	string str = "forgeeksskeegrof";
 	cout << longestPalSubstr(str) << endl;
 	return 0;
 }

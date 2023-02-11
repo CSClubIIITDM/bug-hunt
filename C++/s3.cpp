@@ -18,7 +18,7 @@ void ineedj(void) {
 }
 
 main() {
-  int j;
+  //int j;
   j = foo(i);
   ineedj();
 }
