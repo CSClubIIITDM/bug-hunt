@@ -8,7 +8,7 @@ class Solution
 public:
     bool isPalindrome(string s)
     {
-        int i = 0, j = s.size();
+        int i = 0, j = s.size()-1;
 
         while (i < j)
         {
@@ -35,10 +35,19 @@ public:
                 if (isPalindrome(s.substr(i, j)))
                 {
                     if (result.size() < j)
-                        result = s.substr(i, j + 1);
+                        result = s.substr(i, j);
                 }
             }
         }
         return result;
     }
 };
+
+int main()
+{
+	Solution s;
+	string str = "ewroiasdsadda";
+	string k = s.longestPalindrome(str);
+	cout << k << endl;
+	return 0;
+}

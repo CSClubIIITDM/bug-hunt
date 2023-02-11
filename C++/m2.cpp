@@ -13,14 +13,14 @@ public:
         sort(nums.begin(), nums.end());
         set<vector<int>> s;
         vector<vector<int>> output;
-        for (int i = 0; i < nums.size(); i++){
+        for (int i = 0; i < nums.size()-2; i++){ // 1
             int j = i + 1;
             int k = i+j;
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
                 if (sum == target) {
                     s.insert({nums[i], nums[j], nums[k]});
-                    j++;
+                    j++; k--; // 2
                 } else if (sum < target) {
                     j++;
                 } else {
@@ -33,3 +33,11 @@ public:
         return output;
     }
 };
+
+int main()
+{
+	Solution s;
+	vector<int> v = {1, 3, -2, 6, -2, 0, 1};
+	vector<vector<int>> v1 = s.threeSum(v);
+	return 0;
+}
